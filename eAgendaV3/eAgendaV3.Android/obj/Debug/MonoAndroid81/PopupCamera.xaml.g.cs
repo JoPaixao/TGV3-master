@@ -13,8 +13,7 @@
 namespace eAgendaV3 {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\mkuud\\OneDrive\\Documentos\\Fatec\\TG\\TGVS-master2\\eAgendaV3\\eAgendaV3\\Popu" +
-        "pCamera.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Eagenda\\TGV3-master\\eAgendaV3\\eAgendaV3\\PopupCamera.xaml")]
     public partial class PopupCamera : global::Rg.Plugins.Popup.Pages.PopupPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

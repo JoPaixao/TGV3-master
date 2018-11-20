@@ -108,6 +108,7 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "eAgendaV3.Android.dll" comes first in this list. */
 		"eAgendaV3.Android.dll",
 		"FormsViewGroup.dll",
+		"ImageCircle.Forms.Plugin.dll",
 		"Microsoft.Azure.Mobile.Client.dll",
 		"Microsoft.Azure.Mobile.Client.SQLiteStore.dll",
 		"Microsoft.Azure.NotificationHubs.dll",

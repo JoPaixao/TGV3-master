@@ -1,4 +1,5 @@
 FormsViewGroup
+ImageCircle.Forms.Plugin
 Microsoft.Azure.Mobile.Client
 Microsoft.Azure.Mobile.Client.SQLiteStore
 Microsoft.Azure.NotificationHubs

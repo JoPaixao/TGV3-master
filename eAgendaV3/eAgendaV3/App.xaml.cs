@@ -7,6 +7,7 @@ namespace eAgendaV3
 {
     public partial class App : Application
     {
+        public static MasterDetailPage Masterr { get; set; }
         public App()
         {
             InitializeComponent();

@@ -3,7 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:eAgendaV3"
              x:Class="eAgendaV3.MainPage">
-    <local:Cadastro></local:Cadastro>
-    <local:Perfil></local:Perfil>
+
+    <local:Principal></local:Principal>
+    
+    <!--<local:PaginaInicial></local:PaginaInicial>
+    <local:Perfil></local:Perfil>-->
     
 </TabbedPage>

@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="eAgendaV3.PaginaInicial"
              Title="Pagina Inicial">
+    
     <!--<ScrollView>
-
+    
         <StackLayout> -->
-            <Grid>
-                <Image Source="back.jpeg" Aspect="AspectFill"/>
-                <BoxView Color="#u0699d" Opacity="0.8"/>
+    <Grid>
+        <!--<BoxView Color="#u0699d" Opacity="0.8"/>-->
                 <Grid>
                     <Image Grid.Row="0" Source="Icon.png" WidthRequest="60" HeightRequest="60"  Margin="0,50,0,30"/>
                     <ScrollView Orientation="Horizontal" HorizontalOptions="FillAndExpand" Grid.Row="1" Padding="30,20">

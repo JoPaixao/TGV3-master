@@ -4,6 +4,7 @@ using Android.OS;
 using Plugin.Media;
 using Plugin.CurrentActivity;
 using Rg.Plugins.Popup.Services;
+using ImageCircle.Forms.Plugin.Droid;
 
 namespace eAgendaV3.Droid
 {
@@ -24,6 +25,7 @@ namespace eAgendaV3.Droid
 
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            ImageCircleRenderer.Init();
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
             LoadApplication(new App());
         }
