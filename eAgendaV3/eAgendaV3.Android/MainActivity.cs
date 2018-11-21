@@ -21,7 +21,7 @@ namespace eAgendaV3.Droid
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
             await CrossMedia.Current.Initialize();
             CrossCurrentActivity.Current.Init(this, savedInstanceState);
-
+            
 
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);

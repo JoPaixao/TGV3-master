@@ -1,3 +1,4 @@
+Firebase.Storage
 FormsViewGroup
 ImageCircle.Forms.Plugin
 Microsoft.Azure.Mobile.Client
@@ -49,6 +50,9 @@ Xamarin.Android.Support.v7.MediaRouter
 Xamarin.Android.Support.v7.Palette
 Xamarin.Android.Support.v7.RecyclerView
 Xamarin.Android.Support.Vector.Drawable
+Xamarin.Firebase.Common
+Xamarin.Firebase.Storage.Common
+Xamarin.Firebase.Storage
 Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
@@ -56,11 +60,11 @@ Xamarin.Forms.Xaml
 Xamarin.GooglePlayServices.Base
 Xamarin.GooglePlayServices.Basement
 Xamarin.GooglePlayServices.Tasks
-System.Resources.ResourceManager
-System.Diagnostics.Debug
-System.Collections
-System.Threading
 System.Threading.Tasks
+System.Collections
+System.Diagnostics.Debug
+System.Resources.ResourceManager
+System.Threading
 System.Diagnostics.Tools
 System.Globalization
 System.ObjectModel

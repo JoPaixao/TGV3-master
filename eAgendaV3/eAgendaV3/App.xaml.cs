@@ -8,6 +8,11 @@ namespace eAgendaV3
     public partial class App : Application
     {
         public static MasterDetailPage Masterr { get; set; }
+        public static Image ImagePerfil { get; set; }
+
+        public static int Teste { get; set; }
+
+
         public App()
         {
             InitializeComponent();

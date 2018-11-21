@@ -20,12 +20,12 @@
                             <RowDefinition Height="Auto"/>
 
                         </Grid.RowDefinitions>
-                        <Image Grid.Row="0" Source="Icon.png" WidthRequest="100" HeightRequest="100"  Margin="0,50,0,30"/>
+                        <Image Grid.Row="0" Source="Icon.png" WidthRequest="100" HeightRequest="100"  Margin="0,50,0,30" x:Name="Loginnnn"/>
 
                         <StackLayout Grid.Row="1" Padding="30,20">
                             <Entry Placeholder="Email" PlaceholderColor="White" />
                             <Entry Placeholder="Senha" PlaceholderColor="White" IsPassword="True" />
-                            <Button Text="Login" BackgroundColor="White" BorderRadius="20" TextColor="Black"  Clicked="Button_Clicked"/>
+                            <Button Text="Login" BackgroundColor="White" BorderRadius="20" TextColor="Black"  Clicked="Button_Clicked" x:Name="loginn"/>
                             <StackLayout Orientation="Horizontal">
                                 <Label Text="Recuperar Senha"/>
                                 <Label Text="Cadastrar-se"/>

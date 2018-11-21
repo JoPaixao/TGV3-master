@@ -15,6 +15,8 @@ namespace eAgendaV3
 		public Login ()
 		{
 			InitializeComponent ();
+            App.ImagePerfil = Loginnnn;
+
 		}
       private void Button_Clicked(object sender, EventArgs e)
         {

@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v8.1": {
+      "FirebaseStorage.net/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Helpers/1.0.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1231,6 +1244,55 @@
           "build/Xamarin.Build.Download.targets": {}
         }
       },
+      "Xamarin.Firebase.Common/60.1142.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.GooglePlayServices.Basement": "[60.1142.1]",
+          "Xamarin.GooglePlayServices.Tasks": "[60.1142.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid80/Xamarin.Firebase.Common.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid80/Xamarin.Firebase.Common.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid80/Xamarin.Firebase.Common.targets": {}
+        }
+      },
+      "Xamarin.Firebase.Storage/60.1142.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Firebase.Common": "[60.1142.1]",
+          "Xamarin.Firebase.Storage.Common": "[60.1142.1]",
+          "Xamarin.GooglePlayServices.Basement": "[60.1142.1]",
+          "Xamarin.GooglePlayServices.Tasks": "[60.1142.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid80/Xamarin.Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid80/Xamarin.Firebase.Storage.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid80/Xamarin.Firebase.Storage.targets": {}
+        }
+      },
+      "Xamarin.Firebase.Storage.Common/60.1142.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.GooglePlayServices.Basement": "[60.1142.1]"
+        },
+        "compile": {
+          "lib/MonoAndroid80/Xamarin.Firebase.Storage.Common.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid80/Xamarin.Firebase.Storage.Common.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid80/Xamarin.Firebase.Storage.Common.targets": {}
+        }
+      },
       "Xamarin.Forms/3.3.0.967583": {
         "type": "package",
         "dependencies": {
@@ -1313,6 +1375,16 @@
     }
   },
   "libraries": {
+    "FirebaseStorage.net/1.0.2": {
+      "sha512": "dLkmGSlXdIKjqkpS61W82Y7Qp7Ngd8MgTG0CAn5Zxikorgt+6I1rmZKCaRICmrshNDN3rsMoEd3Eg1peLGlS/g==",
+      "type": "package",
+      "path": "firebasestorage.net/1.0.2",
+      "files": [
+        "firebasestorage.net.1.0.2.nupkg.sha512",
+        "firebasestorage.net.nuspec",
+        "lib/netstandard1.1/Firebase.Storage.dll"
+      ]
+    },
     "Helpers/1.0.0": {
       "sha512": "fQlY6j86XeoHafW3NZGGCO73Q01IhzO1aRPsz/3rj1FP4JtSQsjV+nFNx1D//tZQ4MA21CUTUFXLrzUprUVXcg==",
       "type": "package",
@@ -4836,6 +4908,42 @@
         "xamarin.build.download.nuspec"
       ]
     },
+    "Xamarin.Firebase.Common/60.1142.1": {
+      "sha512": "+7los+L0hzPF71RjTZPg3KXun8L6J+0msF7c2WDvh2YNcTkqtwa63m39O4kDo8oUeb41JEMfqE0Uwq3lDgabng==",
+      "type": "package",
+      "path": "xamarin.firebase.common/60.1142.1",
+      "files": [
+        ".signature.p7s",
+        "build/MonoAndroid80/Xamarin.Firebase.Common.targets",
+        "lib/MonoAndroid80/Xamarin.Firebase.Common.dll",
+        "xamarin.firebase.common.60.1142.1.nupkg.sha512",
+        "xamarin.firebase.common.nuspec"
+      ]
+    },
+    "Xamarin.Firebase.Storage/60.1142.1": {
+      "sha512": "hdQofZjt9uhqBDInXMAYkR9wYDiiH59QHbiqWuB9QtYBZcEdl7WxKGorHbRuo2FMsZU3Dpx/fHsP1BWwRUnxJA==",
+      "type": "package",
+      "path": "xamarin.firebase.storage/60.1142.1",
+      "files": [
+        ".signature.p7s",
+        "build/MonoAndroid80/Xamarin.Firebase.Storage.targets",
+        "lib/MonoAndroid80/Xamarin.Firebase.Storage.dll",
+        "xamarin.firebase.storage.60.1142.1.nupkg.sha512",
+        "xamarin.firebase.storage.nuspec"
+      ]
+    },
+    "Xamarin.Firebase.Storage.Common/60.1142.1": {
+      "sha512": "i3+vY94aIMwpDhU8/HWoyHoZAaUqoahlSUKW6GE63bQJDGl0+42ZZZ7wYVA7mFLmJ7j+IOSJz3tl8QQVBdWJlg==",
+      "type": "package",
+      "path": "xamarin.firebase.storage.common/60.1142.1",
+      "files": [
+        ".signature.p7s",
+        "build/MonoAndroid80/Xamarin.Firebase.Storage.Common.targets",
+        "lib/MonoAndroid80/Xamarin.Firebase.Storage.Common.dll",
+        "xamarin.firebase.storage.common.60.1142.1.nupkg.sha512",
+        "xamarin.firebase.storage.common.nuspec"
+      ]
+    },
     "Xamarin.Forms/3.3.0.967583": {
       "sha512": "aebAEUHkER6WRo4WpsDd8jq4EudSl3WS4n7Pxcq8ea+x9fHi9PstCU0dU2D5PGvSeKa3yEFSpRljOEjI7qtsNA==",
       "type": "package",
@@ -5021,6 +5129,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v8.1": [
+      "FirebaseStorage.net >= 1.0.2",
       "Helpers >= 1.0.0",
       "Microsoft.Azure.Mobile.Client >= 4.0.2",
       "Microsoft.Azure.Mobile.Client.SQLiteStore >= 4.0.2",
@@ -5034,6 +5143,7 @@
       "Xamarin.Android.Support.v7.AppCompat >= 27.0.2.1",
       "Xamarin.Android.Support.v7.CardView >= 27.0.2.1",
       "Xamarin.Android.Support.v7.MediaRouter >= 27.0.2.1",
+      "Xamarin.Firebase.Storage >= 60.1142.1",
       "Xamarin.Forms >= 3.3.0.967583",
       "Xamarin.GooglePlayServices.Base >= 60.1142.1",
       "Xamarin.GooglePlayServices.Basement >= 60.1142.1"
@@ -5072,6 +5182,10 @@
     "frameworks": {
       "monoandroid81": {
         "dependencies": {
+          "FirebaseStorage.net": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          },
           "Helpers": {
             "target": "Package",
             "version": "[1.0.0, )"
@@ -5123,6 +5237,10 @@
           "Xamarin.Android.Support.v7.MediaRouter": {
             "target": "Package",
             "version": "[27.0.2.1, )"
+          },
+          "Xamarin.Firebase.Storage": {
+            "target": "Package",
+            "version": "[60.1142.1, )"
           },
           "Xamarin.Forms": {
             "target": "Package",

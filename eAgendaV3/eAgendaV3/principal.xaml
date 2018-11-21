@@ -78,7 +78,7 @@
   <MasterDetailPage.Detail>
     <NavigationPage>
       <x:Arguments>
-        <pages:PaginaInicial/>
+        <pages:Perfil/>
       </x:Arguments>
     </NavigationPage>
   </MasterDetailPage.Detail>

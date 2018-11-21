@@ -107,6 +107,7 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "eAgendaV3.Android.dll" comes first in this list. */
 		"eAgendaV3.Android.dll",
+		"Firebase.Storage.dll",
 		"FormsViewGroup.dll",
 		"ImageCircle.Forms.Plugin.dll",
 		"Microsoft.Azure.Mobile.Client.dll",
@@ -157,6 +158,9 @@ class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.v7.Palette.dll",
 		"Xamarin.Android.Support.v7.RecyclerView.dll",
 		"Xamarin.Android.Support.Vector.Drawable.dll",
+		"Xamarin.Firebase.Common.dll",
+		"Xamarin.Firebase.Storage.Common.dll",
+		"Xamarin.Firebase.Storage.dll",
 		"Xamarin.Forms.Core.dll",
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",

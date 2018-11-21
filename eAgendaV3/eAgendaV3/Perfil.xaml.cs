@@ -18,9 +18,12 @@ namespace eAgendaV3
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Perfil : ContentPage
 	{
+     
 		public Perfil ()
 		{
 			InitializeComponent ();
+            //App.ImagePerfil.Source = IconPerfil.Source;
+            
 		}
         private async void Handle_Clicked(object sender, EventArgs e)
         {
@@ -49,7 +52,7 @@ namespace eAgendaV3
                     {
                         SaveToAlbum = true,
                         Directory = "Demo",
-                    //Name = $"{DateTime.UtcNow.ToString("yyyy-dd-M--HH-mm-ss")}.jpg"
+                        Name = "imagemperfilID.jpg"
                 });
 
                 if (file == null)
@@ -87,9 +90,13 @@ namespace eAgendaV3
 
                 });
 
+                
+
             }
-            
+            App.ImagePerfil = IconPerfil;
+
 
         }
+       
     }
 }

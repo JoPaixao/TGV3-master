@@ -8,6 +8,8 @@ namespace eAgendaV3.Models
     public class MasterPageItem
     {
         public string titulo { get; set; }
+
+        public string icon { get; set; }
         public Type targtType { get; set; }
 
         public static implicit operator ObservableCollection<object>(MasterPageItem v)

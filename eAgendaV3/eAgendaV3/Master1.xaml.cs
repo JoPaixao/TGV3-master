@@ -17,11 +17,13 @@ namespace eAgendaV3
 	{
         private ObservableCollection<MasterPageItem> _menuLista;
         private ObservableCollection<MasterPageItem> _paginaInicial;
+        //private ObservableCollection<ImagePerfil>
 
         public Master1()
         {
            
             InitializeComponent();
+            //Perfilzinho.Source= App.ImagePerfil.Source;
             _menuLista = ItemsMaster.getMenuItens();
             _paginaInicial = ItemsMaster.getPaginaInicial();
             Inicio2.ItemsSource = _paginaInicial;
@@ -47,9 +49,17 @@ namespace eAgendaV3
             App.Masterr.IsPresented = false;
         }
 
-        private void Handle_Clicked2(object sender, EventArgs e)
+        private void Button_Clicked(object sender, EventArgs e)
         {
-            App.Masterr.Master = new Master2();
+            Type pagina = typeof(Perfil);
+            App.Masterr.Detail = new NavigationPage((Page)Activator.CreateInstance(pagina));
+            App.Masterr.IsPresented = false;
+
         }
+
+        //private void Handle_Clicked2(object sender, EventArgs e)
+        //{
+        //    App.Masterr.Master = new Master2();
+        //}
     }
 }
